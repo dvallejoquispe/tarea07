@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    --color1:#00ADEE;
+    --color2:#D2d2d2;
+    --color3:black;
+}
+main{
+    width:80%;
+    border:1px solid grey;
+    margin:25px auto;
+}
+#cabecera{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    background-color: var(--color1);
+}
+#cabecera h3{
+    color:white;
+    font-size: 30px;
+}
+#logo{
+    width:120px;
+}
+#logo img{
+    width:100%
+}
+nav{
+    border:1px solid green
+}
+.menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    height: 50px;
+}
+.menu li{
+    padding:5px
+}
+.menu li a{
+    text-decoration: none;
+    background-color: var(--color3);
+    color:white;
+    padding:5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.menu li a:hover{
+    background-color:white ;
+    color:var(--color1)
+}
+#principal{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;      
+
+}
+.area{
+    border:1px solid gray;
+    margin:20px;
+    padding:5px;
+}
+.area h3, aside h3{
+    text-align: center;
+    padding:5px;
+    background-color: var(--color1);
+    color:white;
+}
+aside{
+    border:1px solid grey;
+    margin:20px;
+    padding:5px;
+    text-align: center;
+}
+aside p{
+    padding:5px;
+}
+footer{
+    background-color: var(--color1);
+    color:white
+}
+#copy{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px;
+}
+address{
+    
+    margin:15px;
+    padding-left: 5cqmin;
+    font-size: 15px;
+}
+video {
+    max-width: 100%;
+    height: auto;
+}
+#contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#contenedor h1{
+    color:#00ADEE;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#contenedor p{
+    color:#f6fafc;
+    margin-top: 20px;
+    font-size: 25px;
+}
+#fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
